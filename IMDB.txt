@@ -1,0 +1,75 @@
+
+    IMDB Design a DB for IMDB 
+
+    Q1. Movie should have multiple media(Video or Image)
+    Q2. Movie can belongs to multiple Genre
+    Q3. Movie can have multiple reviews and Review can belongs to a user
+    Q4. Artist can have multiple skills
+    Q5. Artist can perform multiple role in a single film
+
+    List of tables:
+        -Actor
+        -Movie cast
+        -Director
+        -Movie
+        -MovieDirection
+        -genres
+        -Movie genres
+        -rating
+        -Reveiwer
+        
+
+
+
+    List of tables and columns:
+
+        1. Movie:
+            - movie_id (int)
+            - title    (char(50))
+            -Year (int)
+            - Time(int)
+            - Lang(char(50))
+            - relesae date (date) 
+            - country (char(10))
+        
+       2.  Actor:
+            - id (int)
+            - gender (char)
+            - firstname (char(20))
+            - lastname (char (15))
+
+        3. Directror
+             - id (int)
+             -firstname (char(20))
+             - lastname (char(15))
+
+        4.Movie-Direction         
+              - dir_id   (int)
+              - Mov-id  (int)
+
+        5.Movie_cast
+
+              -act_id  (int)
+              -mov-id(int)  
+
+         6.genres
+
+              -id   (int)
+              -title (char(30))
+
+
+          7.movie_genres
+
+               -mov_id   (int) 
+               -gen_id   (int)  
+
+          8.rating
+
+               -mov_id  (int)
+               -reviews_id  (int)
+               -Review_star (int)        
+
+           9.Reviewer 
+
+                - rev_id (int)
+                -rev_name (char(30))          
